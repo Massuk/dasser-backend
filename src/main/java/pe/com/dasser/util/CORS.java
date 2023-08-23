@@ -14,8 +14,6 @@ import java.io.IOException;
 public class CORS implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        //SEGUN EL CODIGO DE EJEMPLO AQUI NO VA NADA
-        //Filter.super.init(filterConfig);
     }
 
     @Override
@@ -34,12 +32,9 @@ public class CORS implements Filter {
         } else {
             chain.doFilter(req, res);
         }
-        // chain.doFilter(req, res);
     }
 
     @Override
     public void destroy() {
-        //SEGUN EL CODIGO DE EJEMPLO AQUI NO VA NADA
-        //Filter.super.destroy();
     }
 }
